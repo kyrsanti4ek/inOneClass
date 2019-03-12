@@ -19,7 +19,7 @@ public class SimpleTest {
     public void navigateToSunbirdS3() {
 
         File file = new File("./src/drivers/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        //System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
         WebDriver driver = new ChromeDriver();
         WebElement button;
@@ -55,6 +55,8 @@ public class SimpleTest {
         button = driver.findElement(By.xpath(".//*[@id='location-item-sedanos-7']//button[@class='inline-button']"));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         button.click();
+
+        // new comment from mac book
     }
 
 
